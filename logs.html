@@ -1,0 +1,178 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CyberShield Threat Logs</title>
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="brand">
+            CYBERSHIELD
+        </div>
+
+        <ul>
+
+            <li onclick="location.href='dashboard.html'">
+                Dashboard
+            </li>
+
+            <li onclick="location.href='monitoring.html'">
+                Monitoring
+            </li>
+
+            <li class="active">
+                Threat Logs
+            </li>
+
+            <li>
+                Analytics
+            </li>
+
+            <li>
+                Settings
+            </li>
+
+        </ul>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <h1>
+                Security Event Logs
+            </h1>
+
+            <div id="liveTime">
+                Loading...
+            </div>
+
+        </header>
+
+        <section class="overview">
+
+            <div class="overview-card">
+
+                <h3>
+                    Total Logs
+                </h3>
+
+                <span>
+                    12,481
+                </span>
+
+            </div>
+
+            <div class="overview-card">
+
+                <h3>
+                    Critical Alerts
+                </h3>
+
+                <span>
+                    17
+                </span>
+
+            </div>
+
+            <div class="overview-card">
+
+                <h3>
+                    Warnings
+                </h3>
+
+                <span>
+                    83
+                </span>
+
+            </div>
+
+            <div class="overview-card">
+
+                <h3>
+                    Status
+                </h3>
+
+                <span>
+                    ACTIVE
+                </span>
+
+            </div>
+
+        </section>
+
+        <section class="activity-log">
+
+            <h2>
+                Recent Security Events
+            </h2>
+
+            <div id="logContainer">
+
+                <div class="log success">
+                    [INFO] Firewall service started
+                </div>
+
+                <div class="log success">
+                    [INFO] User authentication successful
+                </div>
+
+                <div class="log warning">
+                    [WARNING] Multiple login attempts detected
+                </div>
+
+                <div class="log danger">
+                    [CRITICAL] Suspicious IP blocked
+                </div>
+
+                <div class="log success">
+                    [INFO] Threat signature database updated
+                </div>
+
+                <div class="log warning">
+                    [WARNING] High outbound traffic detected
+                </div>
+
+                <div class="log danger">
+                    [CRITICAL] Potential brute force attack blocked
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>
+```

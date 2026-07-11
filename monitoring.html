@@ -1,0 +1,210 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CyberShield Monitoring</title>
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="brand">
+            CYBERSHIELD
+        </div>
+
+        <ul>
+
+            <li onclick="location.href='dashboard.html'">
+                Dashboard
+            </li>
+
+            <li class="active">
+                Monitoring
+            </li>
+
+            <li>
+                Threat Logs
+            </li>
+
+            <li>
+                Analytics
+            </li>
+
+            <li>
+                Settings
+            </li>
+
+        </ul>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <h1>
+                Real-Time Monitoring Center
+            </h1>
+
+            <div id="liveTime">
+                Loading...
+            </div>
+
+        </header>
+
+        <section class="overview">
+
+            <div class="overview-card">
+
+                <h3>
+                    Connected Devices
+                </h3>
+
+                <span id="deviceCount">
+                    24
+                </span>
+
+            </div>
+
+            <div class="overview-card">
+
+                <h3>
+                    Active Connections
+                </h3>
+
+                <span id="connectionCount">
+                    142
+                </span>
+
+            </div>
+
+            <div class="overview-card">
+
+                <h3>
+                    Network Health
+                </h3>
+
+                <span>
+                    98%
+                </span>
+
+            </div>
+
+            <div class="overview-card">
+
+                <h3>
+                    Monitoring Status
+                </h3>
+
+                <span>
+                    ONLINE
+                </span>
+
+            </div>
+
+        </section>
+
+        <section class="system-monitor">
+
+            <h2>
+                Device Performance
+            </h2>
+
+            <div class="monitor-box">
+
+                <div class="monitor-item">
+
+                    <span>
+                        CPU Usage
+                    </span>
+
+                    <div class="progress">
+                        <div class="progress-fill cpu"></div>
+                    </div>
+
+                </div>
+
+                <div class="monitor-item">
+
+                    <span>
+                        RAM Usage
+                    </span>
+
+                    <div class="progress">
+                        <div class="progress-fill ram"></div>
+                    </div>
+
+                </div>
+
+                <div class="monitor-item">
+
+                    <span>
+                        Network Traffic
+                    </span>
+
+                    <div class="progress">
+                        <div class="progress-fill network"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="activity-log">
+
+            <h2>
+                Live Monitoring Events
+            </h2>
+
+            <div id="logContainer">
+
+                <div class="log success">
+                    Device 192.168.1.10 connected
+                </div>
+
+                <div class="log success">
+                    Network traffic stable
+                </div>
+
+                <div class="log warning">
+                    High bandwidth detected
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>
+```

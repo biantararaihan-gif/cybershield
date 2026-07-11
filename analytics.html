@@ -1,0 +1,218 @@
+```html id="c4m1qn"
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CyberShield Analytics</title>
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="brand">
+            CYBERSHIELD
+        </div>
+
+        <ul>
+
+            <li onclick="location.href='dashboard.html'">
+                Dashboard
+            </li>
+
+            <li onclick="location.href='monitoring.html'">
+                Monitoring
+            </li>
+
+            <li onclick="location.href='logs.html'">
+                Threat Logs
+            </li>
+
+            <li class="active">
+                Analytics
+            </li>
+
+            <li>
+                Settings
+            </li>
+
+        </ul>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <h1>
+                Security Analytics Center
+            </h1>
+
+            <div id="liveTime">
+                Loading...
+            </div>
+
+        </header>
+
+        <section class="overview">
+
+            <div class="overview-card">
+
+                <h3>
+                    Total Threats
+                </h3>
+
+                <span>
+                    8,524
+                </span>
+
+            </div>
+
+            <div class="overview-card">
+
+                <h3>
+                    Blocked Attacks
+                </h3>
+
+                <span>
+                    7,981
+                </span>
+
+            </div>
+
+            <div class="overview-card">
+
+                <h3>
+                    Detection Rate
+                </h3>
+
+                <span>
+                    99%
+                </span>
+
+            </div>
+
+            <div class="overview-card">
+
+                <h3>
+                    Risk Level
+                </h3>
+
+                <span>
+                    LOW
+                </span>
+
+            </div>
+
+        </section>
+
+        <section class="system-monitor">
+
+            <h2>
+                Threat Distribution
+            </h2>
+
+            <div class="monitor-box">
+
+                <div class="monitor-item">
+
+                    <span>
+                        Malware
+                    </span>
+
+                    <div class="progress">
+                        <div class="progress-fill cpu"></div>
+                    </div>
+
+                </div>
+
+                <div class="monitor-item">
+
+                    <span>
+                        Phishing
+                    </span>
+
+                    <div class="progress">
+                        <div class="progress-fill ram"></div>
+                    </div>
+
+                </div>
+
+                <div class="monitor-item">
+
+                    <span>
+                        Brute Force
+                    </span>
+
+                    <div class="progress">
+                        <div class="progress-fill network"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="activity-log">
+
+            <h2>
+                Analytics Report
+            </h2>
+
+            <div id="logContainer">
+
+                <div class="log success">
+                    Malware attacks decreased by 12%
+                </div>
+
+                <div class="log success">
+                    Firewall efficiency increased to 99%
+                </div>
+
+                <div class="log warning">
+                    Suspicious login attempts increased this week
+                </div>
+
+                <div class="log success">
+                    Network stability maintained above 98%
+                </div>
+
+                <div class="log danger">
+                    High-risk IP activity detected in last 24 hours
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>
+```

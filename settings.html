@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CyberShield Settings</title>
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="brand">
+            CYBERSHIELD
+        </div>
+
+        <ul>
+
+            <li onclick="location.href='dashboard.html'">
+                Dashboard
+            </li>
+
+            <li onclick="location.href='monitoring.html'">
+                Monitoring
+            </li>
+
+            <li onclick="location.href='logs.html'">
+                Threat Logs
+            </li>
+
+            <li onclick="location.href='analytics.html'">
+                Analytics
+            </li>
+
+            <li class="active">
+                Settings
+            </li>
+
+        </ul>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <h1>
+                CyberShield Settings
+            </h1>
+
+            <div id="liveTime">
+                Loading...
+            </div>
+
+        </header>
+
+        <section class="overview">
+
+            <div class="overview-card">
+
+                <h3>
+                    Security Mode
+                </h3>
+
+                <span>
+                    ACTIVE
+                </span>
+
+            </div>
+
+            <div class="overview-card">
+
+                <h3>
+                    Firewall
+                </h3>
+
+                <span>
+                    ON
+                </span>
+
+            </div>
+
+            <div class="overview-card">
+
+                <h3>
+                    Auto Scan
+                </h3>
+
+                <span>
+                    ENABLED
+                </span>
+
+            </div>
+
+            <div class="overview-card">
+
+                <h3>
+                    Notifications
+                </h3>
+
+                <span>
+                    ON
+                </span>
+
+            </div>
+
+        </section>
+
+        <section class="system-monitor">
+
+            <h2>
+                Security Configuration
+            </h2>
+
+            <div class="monitor-box">
+
+                <div class="monitor-item">
+
+             <label>
+                <input
+                     type="checkbox"
+                     id="firewallToggle"
+                     checked>
+                     Enable Firewall Protection
+               </label>
+
+                <div class="monitor-item">
+
+                    <label>
+                        <input type="checkbox" checked>
+                        Enable Real-Time Monitoring
+                    </label>
+
+                </div>
+
+                <div class="monitor-item">
+
+                    <label>
+                        <input type="checkbox" checked>
+                        Enable Threat Detection
+                    </label>
+
+                </div>
+
+                <div class="monitor-item">
+
+                    <label>
+                        <input type="checkbox">
+                        Enable Maintenance Mode
+                    </label>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="activity-log">
+
+            <h2>
+                System Preferences
+            </h2>
+
+            <div id="logContainer">
+
+                <div class="log success">
+                    Firewall Protection Enabled
+                </div>
+
+                <div class="log success">
+                    Automatic Updates Enabled
+                </div>
+
+                <div class="log warning">
+                    Maintenance Mode Disabled
+                </div>
+
+                <div class="log success">
+                    Notification Service Running
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/settings.js"></script>
+
+</body>
+</html>
+```
