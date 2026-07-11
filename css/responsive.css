@@ -1,0 +1,160 @@
+/* ===================================
+   CYBERSHIELD RESPONSIVE
+=================================== */
+
+/* ======================
+   LAPTOP
+====================== */
+
+@media (max-width:1200px){
+
+    .overview{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+}
+
+/* ======================
+   TABLET
+====================== */
+
+@media (max-width:900px){
+
+    body{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid #1f2f4f;
+    }
+
+    .main-content{
+        padding:20px;
+    }
+
+    .topbar{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .overview{
+        grid-template-columns:1fr;
+    }
+
+    .monitor-box{
+        padding:15px;
+    }
+
+    .chart{
+        height:180px;
+    }
+
+}
+
+/* ======================
+   MOBILE
+====================== */
+
+@media (max-width:768px){
+
+    .brand{
+        font-size:1.2rem;
+    }
+
+    .sidebar li{
+        padding:12px;
+        font-size:.9rem;
+    }
+
+    .topbar h1{
+        font-size:1.3rem;
+    }
+
+    .overview-card{
+        padding:18px;
+    }
+
+    .overview-card span{
+        font-size:1.5rem;
+    }
+
+    .monitor-item span{
+        font-size:.9rem;
+    }
+
+    #liveTime{
+        width:100%;
+        text-align:center;
+    }
+
+}
+
+/* ======================
+   SMALL MOBILE
+====================== */
+
+@media (max-width:480px){
+
+    .main-content{
+        padding:15px;
+    }
+
+    .topbar h1{
+        font-size:1rem;
+    }
+
+    .overview-card{
+        padding:15px;
+    }
+
+    .overview-card span{
+        font-size:1.2rem;
+    }
+
+    .monitor-table{
+        overflow-x:auto;
+    }
+
+    .monitor-table table{
+        min-width:600px;
+    }
+
+    .chart{
+        height:140px;
+        gap:8px;
+    }
+
+    .bar{
+        min-width:20px;
+    }
+
+    #logoutBtn{
+        padding:12px;
+        font-size:.85rem;
+    }
+
+}
+
+/* ======================
+   ULTRA SMALL DEVICE
+====================== */
+
+@media (max-width:320px){
+
+    .brand{
+        font-size:1rem;
+    }
+
+    .topbar h1{
+        font-size:.9rem;
+    }
+
+    .overview-card span{
+        font-size:1rem;
+    }
+
+}
